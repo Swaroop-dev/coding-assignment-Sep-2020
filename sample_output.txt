@@ -1,13 +1,15 @@
 
+Number of employees: 6
 
+Here the goodies that are selected for distribution are: 
 
-
-Number of employees: 4
-
-Here the goodies that are selected for distribution are: Cult Pass: 2799
+Cult Pass: 2799
+Digital Camera: 11101
 Alexa: 9999
+Sandwich Toaster: 2195
 Microwave Oven: 9800
 Scale: 4999
-And the difference between the chosen goodie with highest price and the lowest price is 7200
+
+And the difference between the chosen goodie with highest price and the lowest price is 8906
 
 

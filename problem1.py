@@ -24,8 +24,6 @@ with open('sample_input.txt', 'r') as f:
         
         length_considered=(len(prices)- employees)
 
-        print(length_considered)
-
         for i in range(length_considered):
             maxprice=prices[i]
             minprice=prices[employees+i]
@@ -54,11 +52,14 @@ with open('sample_input.txt', 'r') as f:
         foutput.write("Number of employees: "+str(employees))
         foutput.write("\n\n")
         foutput.write("Here the goodies that are selected for distribution are: ")
+        foutput.write("\n\n")
         
         for i in output_list:
             foutput.write(i)
             foutput.write("\n")
             
+            
+        foutput.write("\n")    
         foutput.write("And the difference between the chosen goodie with highest price and the lowest price is "+str(difference))
         foutput.write("\n\n\n")   
          
