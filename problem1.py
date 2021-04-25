@@ -1,3 +1,4 @@
+#context manager for openening and closing file
 with open('sample_input.txt', 'r') as f:
     f_content = f.readlines()
     
@@ -7,24 +8,20 @@ with open('sample_input.txt', 'r') as f:
     with open('sample_output.txt', 'a') as foutput:
        
         goodies={}
-        output_list=[]
+        required_goodies=[]
         
-
-        
-        for f in f_content[5:]:
-            goo,price=f.split(":")
+#parsing  data from the file    
+        for f_it in f_content[5:]:
+            goo,price=f_it.split(":")
             goodies[goo]=int(price)
-            
+              
        
-        
-        
-        # foutput.write("And the difference between the chosen goodie with highest price and the lowest price is "+str(difference))
         prices=[int(i) for i in list(goodies.values())]
         prices.sort(reverse=True)
         
-        length_considered=(len(prices)- employees)
+        actual_length=(len(prices)- employees)
 
-        for i in range(length_considered):
+        for i in range(actual_length):
             maxprice=prices[i]
             minprice=prices[employees+i]
             if i == 0:
@@ -42,19 +39,18 @@ with open('sample_input.txt', 'r') as f:
 
         for key,value in goodies.items():
             prices[count]
-            print(value)
             if int(value) in c_price and count < employees:
                 str1=key+": "+str(value)
-                output_list.append(str1)
+                required_goodies.append(str1)
                 count=count+1
        
-
+#writing neccesary things to ouput file
         foutput.write("Number of employees: "+str(employees))
         foutput.write("\n\n")
         foutput.write("Here the goodies that are selected for distribution are: ")
         foutput.write("\n\n")
         
-        for i in output_list:
+        for i in required_goodies:
             foutput.write(i)
             foutput.write("\n")
             
