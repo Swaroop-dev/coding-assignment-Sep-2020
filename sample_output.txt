@@ -1,0 +1,13 @@
+
+
+
+
+Number of employees: 4
+
+Here the goodies that are selected for distribution are: Cult Pass: 2799
+Alexa: 9999
+Microwave Oven: 9800
+Scale: 4999
+And the difference between the chosen goodie with highest price and the lowest price is 7200
+
+
